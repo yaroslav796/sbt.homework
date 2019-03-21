@@ -1,8 +1,11 @@
+package ru.sbt.homework;
+
 public enum Currency {
 
     RUR("Российский рубль"),
     EUR("Евро"),
-    USD("Доллар США");
+    USD("Доллар США"),
+    EXEPTION_CURRENCE("Ошибочная валюта");
 
     private String title;
 

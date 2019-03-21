@@ -1,3 +1,5 @@
+package ru.sbt.homework;
+
 public class ConvertionRequest {
     Money money;
     Currency currency;

@@ -1,3 +1,5 @@
+package ru.sbt.homework;
+
 public class Money {
     Currency currency;
     double cash;

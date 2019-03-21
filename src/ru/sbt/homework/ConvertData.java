@@ -1,3 +1,5 @@
+package ru.sbt.homework;
+
 public class ConvertData {
     Client client;
     Money money;

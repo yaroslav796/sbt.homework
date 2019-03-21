@@ -1,3 +1,5 @@
+package ru.sbt.homework;
+
 import java.util.Date;
 
 public class DUL {
