@@ -8,9 +8,10 @@ public class Converter {
     Printer printer;
     ManagmentService managmentService;
 
-    public Converter(Client client, Printer printer) {
+    public Converter(Client client, Printer printer, ManagmentService managmentService) {
         this.client = client;
         this.printer = printer;
+        this.managmentService = managmentService;
     }
 
     public Converter() {}
@@ -30,5 +31,7 @@ public class Converter {
         ConvertionResult convertionResult = currencyConverter.convert(convertData, operator);
         Printer printer = new Printer();
         printer.print(convertionResult);
+//        Converter converter = new Converter(client, printer);
+
     }
 }
