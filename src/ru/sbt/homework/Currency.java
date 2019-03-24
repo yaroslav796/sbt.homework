@@ -2,7 +2,7 @@ package ru.sbt.homework;
 
 public enum Currency {
 
-    RUR("Российский рубль"),
+    RUB("Российский рубль"),
     EUR("Евро"),
     USD("Доллар США"),
     EXEPTION_CURRENCE("Ошибочная валюта");
@@ -17,4 +17,5 @@ public enum Currency {
         return title;
     }
 
+    Currency() {    }
 }

@@ -12,4 +12,7 @@ public class Client extends Person {
         this.birthday = birthday;
         this.document = document;
     }
+
+    public Client() {
+    }
 }
