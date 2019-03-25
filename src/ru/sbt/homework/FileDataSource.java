@@ -8,6 +8,7 @@ import java.util.Date;
 /**
  * Created by Yaroslav on 24.03.2019.
  */
+//TODO добавь константы
 public class FileDataSource implements IDataSource {
 
     private File file;
@@ -21,9 +22,10 @@ public class FileDataSource implements IDataSource {
         Money money = new Money();
         Currency currency = null;
 
-        try{
-            FileInputStream fstream = new FileInputStream(this.file);
-            BufferedReader br = new BufferedReader(new InputStreamReader(fstream));
+        try(FileInputStream fstream = new FileInputStream(this.file);
+            BufferedReader br = new BufferedReader(new InputStreamReader(fstream))
+        ){
+
             String strLine;
             while ((strLine = br.readLine()) != null){
                 fileLines.add(strLine);
